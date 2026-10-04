@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.page-title {
+  margin-top: 20px;
+}
+
+.project-card {
+  margin-top: 20px;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  border: 1px solid gray;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Mobile: < 576px */
+@media (max-width: 575px) {
+  body { font-size: 14px; }
+  .page-title { font-size: 24px; }
+  .sidebar { padding: 10px; }
+  #footer { padding: 10px; }
+  .extra-info { display: none; }   /* element visibility: hidden on mobile */
+}
+
+/* Tablet: 576px - 768px */
+@media (min-width: 576px) and (max-width: 768px) {
+  body { font-size: 16px; }
+  .page-title { font-size: 30px; }
+  .sidebar { padding: 15px; }
+}
+
+/* Laptop: 769px - 992px */
+@media (min-width: 769px) and (max-width: 992px) {
+  body { font-size: 17px; }
+  .page-title { font-size: 34px; }
+  .sidebar { padding: 20px; }
+}
+
+/* Desktop: > 992px */
+@media (min-width: 993px) {
+  body { font-size: 18px; }
+  .page-title { font-size: 40px; }
+  .sidebar { padding: 30px; }
+  #footer { padding: 30px; }
+}

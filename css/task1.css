@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Desktop (default): 3 boxes in a row */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.box {
+  background-color: lightblue;
+  border: 2px solid navy;
+  padding: 40px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Tablet and laptop: 576px - 992px -> 2 boxes in a row */
+@media (min-width: 576px) and (max-width: 992px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: < 576px -> boxes stacked vertically */
+@media (max-width: 575px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .box {
+    padding: 20px;
+    font-size: 18px;
+  }
+}

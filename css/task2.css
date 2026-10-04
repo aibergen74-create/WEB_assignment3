@@ -1,0 +1,8 @@
+.box {
+  background-color: lightgreen;
+  border: 2px solid darkgreen;
+  padding: 40px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+}
